@@ -1,0 +1,64 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title> ProCreate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body> 
+  <center> 
+  <h1> ProCreate</h1>
+  <br>
+  <br>
+  <p id="label1"> You should draw : </p>
+  <button id="spin"> Spin the Wheel</button>
+ <div class="mainbox" id="mainbox">
+<div class = "box" id="box">
+  <div class="box1">
+  <span class="font span1"> <h5> Land Animals</h5></span>
+  <span class="font span2"> <h5> Pastry Items</h5></span>
+  <span class="font span3"> <h5> Flowers or Plants</h5></span>
+  <span class="font span4"> <h5> Water Animals</h5></span>
+  <span class="font span5"> <h5> Rainbow </h5></span>
+
+</div>
+<div class="box2">
+  <div class = "font span1"><h5> Seashells</h5></div>
+   <div class="font span2"><h5> Boba or Bubbled Tea</h5></div>
+   <div class="font span3"><h5> Mountains</h5></div>
+   <div class="font span4"><h5> Aliens</h5></div>
+   <div class="font span5"><h5> Butterflies</h5></div>
+  </div>
+  </div>
+  <button class="spin" onclick="spin()"> SPIN </button>
+  </div>
+  <audio
+  controls="controls"
+  id="applause"
+  src="Applause sound effect.mp3"
+  type="audtition/mp3"></audio>
+  <audio 
+  controls="controls"
+  id="applause"
+  src="spinning-reel-27903.mp3"
+  type="audition/mp3"
+  </center>
+  </body>
+  <br>
+  <button id="Clearcanvas" type="button" class="btn-primary" onclick="Clearcanvas()"> Clear the Canvas </button>
+  <br>
+</center>
+
+<script src="main.js"></script>
+</body>

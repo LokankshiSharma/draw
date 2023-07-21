@@ -1,0 +1,81 @@
+body{
+    background-color: rgb(183, 210, 255);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100wh;
+
+}
+h1{
+color:white;
+font-family: 'Kablammo', cursive;
+}
+#opmod{
+    float: right;
+    margin-right: 10px;
+}
+canvas{
+    border: 5px black dotted;
+    margin-top: 500px;
+    animation-name: skrib;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes skrib {
+    from { box-shadow: 1px 1px 38px blue;  }
+    to { box-shadow: 1px 1px 38px indigo; }
+}
+.box2{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    outline:none
+}
+.box1{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    outline:none
+}
+.mainbox{
+    position: relative;
+    width:500px;
+    height: 500px;
+    margin-top:50px;
+}
+.mainbox:after{
+    position:absolute;
+    content: ""
+    width : 100%;
+    height :100%;
+    left : 5%;
+    top :48%;
+transform:rotate(90deg);
+}
+.span{
+   width: 100%;
+   height: 100%;
+   display: inline-block;
+   position: absolute;
+}
+.span1{
+ clip-path: polygon(0 17%, 0 50%, 50% 50%);   
+ background-color: rgb(35, 206, 35);
+}
+.span2{
+    clip-path: polygon(0 17%, 30% 0, 50% 50%);   
+    background-color: red;
+   }
+   .span3{
+    clip-path: polygon( 30% 0, 71% 0 , 50% 50%);   
+    background-color:rgb(255, 255, 110);
+   }
+   .span4{
+    clip-path: polygon(71% 0, 100% 18%, 50% 50%);   
+    background-color: pink;
+   }
+   .span5{
+    clip-path: polygon(0 17%, 0 50%, 50% 50%);   
+    background-color:rgb(106, 173, 214) ;
+   }
+   
